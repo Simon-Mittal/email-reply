@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Response Generator</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="email.css" />
+</head>     
+<body>
+
+  <div class="container">
+    <div id="moonLine">
+      <button id="theme">
+        <i id="icon" class="fas fa-sun"></i> 
+      </button>
+    </div>
+    <h2>EMAIL REPLY GENERATOR</h2>
+    <label for="message"><h3>Enter Mail</h3></label>
+    <textarea id="message" rows="6" placeholder="Enter the message or prompt..."></textarea>
+    <label for="emotion">Select Emotion/Tone</label>
+    <select id="emotion">
+      <option value="" disabled selected>Select</option>
+      <option value="apologetic">Apologetic</option>
+      <option value="appreciative">Appreciative</option>
+      <option value="formal">Formal</option>
+      <option value="friendly">Friendly</option>
+      <option value="professional">Professional</option>
+    </select>
+
+    <label for="language">Select Language</label>
+    <select id="language">
+      <option value="" disabled selected>Choose language</option>
+      <option value="Arabic">Arabic</option>
+      <option value="Bengali">Bengali</option>
+      <option value="Chinese">Chinese (Simplified)</option>
+      <option value="Dutch">Dutch</option>
+      <option value="English">English</option>
+      <option value="French">French</option>
+      <option value="German">German</option>
+      <option value="Gujarati">Gujarati</option>
+      <option value="Hindi">Hindi</option>
+      <option value="Italian">Italian</option>
+      <option value="Japanese">Japanese</option>
+      <option value="Kannada">Kannada</option>
+      <option value="Korean">Korean</option>
+      <option value="Malayalam">Malayalam</option>
+      <option value="Marathi">Marathi</option>
+      <option value="Persian">Persian (Farsi)</option>
+      <option value="Polish">Polish</option>
+      <option value="Portuguese">Portuguese</option>
+      <option value="Punjabi">Punjabi</option>
+      <option value="Russian">Russian</option>
+      <option value="Spanish">Spanish</option>
+      <option value="Tamil">Tamil</option>
+      <option value="Telugu">Telugu</option>
+      <option value="Thai">Thai</option>
+      <option value="Turkish">Turkish</option>
+      <option value="Ukrainian">Ukrainian</option>
+      <option value="Urdu">Urdu</option>
+      <option value="Vietnamese">Vietnamese</option>
+    </select>
+    <div >
+      <button onclick="generateEmail()" class="changes">
+        Generate Reply
+      </button>
+    </div>
+    <h3>Generated Reply</h3>
+    <textarea id="output" class="ouputClass" rows="6"></textarea>
+    <div >
+      <button id="copy" class="changes">
+          Copy To Clipboard
+      <iconify-icon icon="mdi:content-copy" width="24" height="15"></iconify-icon>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body></html>
