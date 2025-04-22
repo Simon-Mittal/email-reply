@@ -51,7 +51,7 @@ async function generateEmail()
           ]
         };
 
-      const response= await fetch(url, {
+      const response= await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(requestBody)
