@@ -1,6 +1,5 @@
-const url="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDtMG9XLHZPE_9VOBhcqnkLIe5p-a2sx3o"
-
-
+const apiKey = "AIzaSyCKiGVT41_KLiZDh8IHSeWF50z-srr61EQ"; 
+const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 const theme=document.getElementById("theme")
 const icon=document.getElementById("icon")
 theme.addEventListener("click",()=>{
